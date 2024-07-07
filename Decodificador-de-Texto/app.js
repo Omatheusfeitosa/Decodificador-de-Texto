@@ -33,26 +33,23 @@ function criptografar(texto) {
     }
 
     let imagem = document.getElementById('imagem-secundaria');
-    let novaArea = document.createElement('textarea');
+    let novoParagrafo = document.createElement('p');
     
-    novaArea.className = 'nova-area';
-    novaArea.setAttribute('disabled', '');
-    novaArea.textContent = textoEncriptado;
+    novoParagrafo.className = 'novo-paragrafo';
+    novoParagrafo.textContent = textoEncriptado;
 
-    imagem.parentNode.replaceChild(novaArea, imagem);
+    imagem.parentNode.replaceChild(novoParagrafo, imagem);
 
     let section = document.querySelector('.apresentacao-secundaria')
     let botao = document.createElement('button');
     botao.textContent = 'Copiar'
     botao.className = 'botao3';
     botao.addEventListener('click', function(){
-        navigator.clipboard.writeText(novaArea.innerHTML);
-        limpaCampo('.nova-area')
+        navigator.clipboard.writeText(novoParagrafo.innerHTML)
     })
-
     section.appendChild(botao)
 
-    limpaCampo('.entrada')    
+    limpaCampo()    
 }
 
 function geraNumeroInvertido(codigo) {
@@ -79,23 +76,22 @@ function descriptografar(texto) {
         textoEncriptado += String.fromCharCode(array[i]) 
     }   
 
-    let paragrafo = document.querySelector('.nova-area');
-    let novaArea = document.createElement('textarea');
+    let paragrafo = document.querySelector('.novo-paragrafo');
+    let novoParagrafo = document.createElement('p');
     
-    novaArea.className = 'nova-area';
-    novaArea.setAttribute('disabled', '');
-    novaArea.textContent = textoEncriptado;
+    novoParagrafo.className = 'novo-paragrafo';
+    novoParagrafo.textContent = textoEncriptado;
 
     let elemento = paragrafo.parentNode
 
-    elemento.replaceChild(novaArea, paragrafo);
+    elemento.replaceChild(novoParagrafo, paragrafo);
 
-    limpaCampo('.entrada')
+    limpaCampo()
 
 }
 
-function limpaCampo(classe) {
-    document.querySelector(`${classe}`).value = ''
+function limpaCampo() {
+    document.querySelector('.entrada').value = ''
 }
 
 // ((codigoDaLetraASC - cod1aLetra + desloc) % tamDoAlfabeto) + cod1Letra

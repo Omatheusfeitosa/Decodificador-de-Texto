@@ -12,7 +12,6 @@ body {
 
 .apresentacao {
     display: flex;
-    flex-direction: row;
     gap: 5rem;
     border: none;
 }
@@ -54,7 +53,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 0.3rem;
-    margin: 0 auto;
+    margin: 0 0 0 3rem;
     font-family: "Inter", sans-serif;
 }
 
