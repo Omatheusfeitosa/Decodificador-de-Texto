@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 2%;
+    background-color: #E5E5E5;
+}
+
+.apresentacao {
+    display: flex;
+    gap: 5rem;
+    border: none;
+}
+
+.apresentacao-principal {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-left: 8rem;
+}
+
+.entrada {
+    height: 80%;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    outline: none;
+    font-size: 2rem;  
+}
+
+.entrada::placeholder {
+    color: #0A3871;
+    font-size: 3.12rem;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+}
+
+.texto {
+    position: absolute;
+    color:#0A3871;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.aviso {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    margin: 0 0 0 3rem;
+    font-family: "Inter", sans-serif;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0px auto 0px auto;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.botao1 {
+    width: 40%;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: #0A3871;
+    color: white;
+    border: none;
+    font-family: "Inter", sans-serif;
+}
+
+.botao2 {
+    width: 40%;
+    height: 3rem;
+    border-radius: 10px;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    font-family: "Inter", sans-serif;
+}
+
+.apresentacao-secundaria {
+    width: 30%;
+    height: 500px;
+    gap: 0px;
+    border-radius: 32px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.1), -3px 0px 5px rgba(0, 0, 0, 0.1);;
+}
+
+.imagem-secundaria {
+    width: 70%;
+    margin: auto;
+}
+
+.novo-paragrafo {
+    margin: 1rem 1rem ;
+    font-family: "Inter", sans-serif;
+}
+
+.botao3 {
+    width: 50%;
+    height: 3rem;
+    border-radius: 10px;
+    color: #0A3871;
+    background-color: white;
+    border: 1px solid #0A3871;
+    margin: auto 0 1rem 0;
+    font-family: "Inter", sans-serif;
+}
+
+
+
